@@ -1,0 +1,172 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Моя семья – мой космос | Регистрация</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+      color: aqua;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #282828;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+    }
+    header img {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+    header h1 {
+      font-size: 26px;
+      margin: 0 40px 0 0;
+    }
+    header a {
+      color: aqua;
+      text-decoration: none;
+      margin-right: 25px;
+      font-size: 18px;
+      line-height: 100px;
+    }
+    .register {
+      max-width: 600px;
+      width: 100%;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: #202020;
+      border-radius: 5px;
+    }
+    .register h2 {
+      margin-top: 0;
+    }
+    .register label {
+      color: aqua;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    select {
+      display: block;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 7px;
+      border-radius: 4px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      background-color: #303030;
+      color: #aaa;
+    }
+    input[type="file"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 7px;
+      border-radius: 4px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      background-color: #303030;
+      color: #777;
+      pointer-events: none;
+    }
+    button {
+      background-color: #80cbc4;
+      color: black;
+      cursor: not-allowed;
+      pointer-events: none;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+    footer {
+      background-color: #282828;
+      color: aqua;
+      padding: 15px 10px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer a {
+      color: aqua;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.yapx.ru/ZQZaa.png" alt="Логотип">
+  <h1>Моя семья - мой космос</h1>
+  <a href="index.html">Главная</a>
+  <a href="account.html">Личный кабинет</a>
+</header>
+
+<div class="register">
+  <h2>Регистрация</h2>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label>Имя:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label>Фамилия:</label>
+  <input type="text" id="Fname" name="Fname" required>
+
+  <label>Возраст:</label>
+  <input type="number" id="vozrast" name="vozrast" min="1" required>
+
+  <label>Пол:</label>
+  <select id="pol" name="pol" required>
+    <option value="men">Мужской</option>
+    <option value="women">Женский</option>
+  </select>
+
+  <label>Пароль:</label>
+  <input type="password" id="password" name="password" required>
+
+  <label>Повторите пароль:</label>
+  <input type="password" id="password2" name="password2" required>
+
+  <label>Загрузите семейную фотографию:</label>
+  <input type="file" id="familyphoto" name="familyphoto" accept="image/*" disabled>
+
+  <button type="button" disabled>Зарегистрироваться</button>
+</div>
+
+<footer>
+  <p>
+    Контакты: <a href="tel:+79520065564">+7 (952)006-55-64</a> | <a href="mailto:familycosmos@gmail.com">familycosmos@gmail.com</a>
+  </p>
+  <p>
+    <a href="index.html">Главная</a> |
+    <a href="registration.html">Регистрация</a> |
+    <a href="competition.html">Конкурс</a> |
+    <a href="account.html">Личный кабинет</a> |
+    <a href="404.html">Страница не найдена</a>
+  </p>
+</footer>
+
+</body>
+</html>
