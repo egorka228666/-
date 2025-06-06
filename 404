@@ -1,0 +1,101 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Моя семья – мой космос | Страница не найдена</title>
+  <style>
+    body {
+      background-color: black;
+      color: aqua;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #282828;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      border-bottom: 1px solid gray;
+    }
+    header img {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+    header h1 {
+      font-size: 26px;
+      margin: 0 40px 0 0;
+      flex-shrink: 0;
+    }
+    header a {
+      color: aqua;
+      text-decoration: none;
+      margin-right: 25px;
+      font-size: 18px;
+      line-height: 100px;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .error-image {
+      width: 300px; 
+      height: 300px;
+      margin: 20px auto; 
+    }
+    footer {
+      background-color: #282828;
+      color: aqua;
+      padding: 10px 20px;
+      text-align: center;
+      margin-top: auto;
+    }
+    footer a {
+      color: aqua;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.yapx.ru/ZQZaa.png" alt="Логотип сайта" />
+  <h1>Моя семья - мой космос</h1>
+  <a href="index.html">Главная</a>
+  <a href="registration.html">Регистрация</a>
+  <a href="account.html">Личный кабинет</a>
+</header>
+
+<main>
+  <h2>404 - Страница не найдена</h2>
+  <img class="error-image" src="https://avatars.mds.yandex.net/i?id=748c83b258f2f34e8c580a8f92db748c3b98d4fd-4017487-images-thumbs&n=13"/>
+  <p>К сожалению, запрашиваемая вами страница не найдена.</p>
+  <p>Пожалуйста, проверьте адрес или вернитесь на <a href="index.html">главную страницу</a>.</p>
+</main>
+
+<footer>
+  <p>
+    Контакты: <a href="tel:+79520065564">+7 (952)006-55-64</a> | <a href="mailto:familycosmos@gmail.com">familycosmos@gmail.com</a>
+  </p>
+  <p>
+    <a href="index.html">Главная</a> |
+    <a href="registration.html">Регистрация</a> |
+    <a href="competition.html">Конкурс</a> |
+    <a href="account.html">Личный кабинет</a> |
+    <a href="404.html">Страница не найдена</a>
+  </p>
+</footer>
+
+</body>
+</html>
