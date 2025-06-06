@@ -1,0 +1,320 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Моя семья – мой космос | Главная</title>
+  <style>
+    body {
+      background-color: white; 
+      color: aqua; 
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f0f0f0; 
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      border-bottom: 1px solid gray;
+    }
+    header img {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+    header h1 {
+      font-size: 26px;
+      margin: 0 40px 0 0;
+      flex-shrink: 0;
+      margin-right: 500px;
+    }
+    header a {
+      color: aqua; 
+      text-decoration: none;
+      margin-right: 25px;
+      font-size: 18px;
+      line-height: 100px;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+    .pop-kon {
+      background-color: #e0e0e0; 
+      width: 100%;
+      height: 150px;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    .pop-kon img {
+      width: 250px;
+      height: 150px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+    .pop-kon p {
+      font-size: 18px;
+      margin: 0;
+    }
+    .avto {
+      background-color: #e0e0e0; 
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      max-width: 320px;
+    }
+    .avto h2 {
+      margin-top: 0;
+    }
+    .avto input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 7px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+    }
+    .avto button {
+      background-color: #80cbc4;
+      border: none;
+      color: black;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .organizac {
+      background-color: #e0e0e0; 
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    .organizac img {
+      width: 180px;
+      height: 120px;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+    .organizac div {
+      font-size: 18px;
+    }
+    .video {
+      margin-bottom: 30px;
+    }
+    .video video {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .conkersi {
+      margin-bottom: 30px;
+    }
+    .conkyrs {
+      background-color: #f0f0f0; 
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 1000px;
+      height: 500px;
+    }
+    .conkyrs img {
+      width: 100%;
+      height: 370px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .conkyrs h3 {
+      margin: 0 0 7px 0;
+    }
+    .conkyrs button {
+      background-color: #91fff4;
+      border: none;
+      color: black;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .poisk {
+      margin-bottom: 30px;
+    }
+    .poisk input {
+      width: 75%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px 0 0 5px;
+      border: 1px solid #ffc6c6;
+    }
+    .poisk button {
+      padding: 8px 15px;
+      font-size: 16px;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      background-color: #71e8dc;
+      cursor: pointer;
+      color: black;
+    }
+    .reviews {
+      margin-bottom: 30px;
+    }
+    .review {
+      background-color: #ffe5e5; 
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    .review img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .review div {
+      font-size: 16px;
+    }
+    .review .name {
+      font-weight: bold;
+    }
+    .review .date {
+      font-size: 12px;
+      color: #888;
+    }
+    footer {
+      background-color: #ffd6d6;
+      color: aqua; 
+      padding: 15px;
+      text-align: center;
+    }
+    footer a {
+      color: aqua; 
+      text-decoration: none;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.yapx.ru/ZQZaa.png" alt="Логотип">
+    <h1>Моя семья - мой космос</h1>
+    <a href="registration.html">Регистрация</a>
+    <a href="#avto">Авторизация</a>
+    <a href="account.html">Личный кабинет</a>
+    <a href="#">О нас</a>
+    <a href="schedule.html">Конкурсы</a>
+    <a href="#">Поиск</a>
+    <a href="#kontakt">Контакты</a>
+</header>
+
+<main>
+
+    <div class="pop-kon" aria-label="Популярные конкурсы">
+        <img src="https://avatars.mds.yandex.net/i?id=c97731b460a694c07e980eb007a84d84c618c0fa-12147736-images-thumbs&n=13.png">
+        <p>Фотоконкурс для всей семьи</p>
+        <p>Рейтинг конкурса: ★★★★☆ (4.5 из 5)</p>
+    </div>
+
+    <div class="avto" aria-label="Авторизация">
+        <h2 id="avto">Вход в личный кабинет</h2>
+        <input type="email" placeholder="Email" disabled>
+        <input type="password" placeholder="Пароль" disabled>
+        <button disabled>Войти</button>
+        <p><a href="#">Забыли пароль?</a></p>
+    </div>
+
+    <div class="organizac" aria-label="О нас">
+        <img src="https://avatars.mds.yandex.net/i?id=cf7758a6c3ee4f23e038cb628f7392876af28077-5232436-images-thumbs&n=13" alt="Фото о нас">
+        <div>Мы - команда организаторов, создающая незабываемые семейные конкурсы, объединившие космос и любовь.</div>
+    </div>
+
+    <div class="video">
+        <h2>Приветствие от организаторов</h2>
+        <video src="https://kosmo-park.com/docs_2024_kp/video/about/about_video.mp4" controls></video>
+    </div>
+
+    <div class="conkersi" aria-label="Конкурсы">
+        <h2>Конкурсы</h2>
+        <div class="conkyrs" >
+            <img src="https://avatars.mds.yandex.net/i?id=63167ea66d49b7afb5a05e02b440f259_l-4957727-images-thumbs&n=13.png">
+            <h3>Конкурс рисунков</h3>
+            <p>Создайте космический рисунок всей семьёй.</p>
+            <button disabled>Записаться</button>
+        </div>
+        <div class="conkyrs">
+            <img src="https://avatars.mds.yandex.net/i?id=c97731b460a694c07e980eb007a84d84c618c0fa-12147736-images-thumbs&n=13.png">
+            <h3>Фотоконкурс</h3>
+            <p>Поделитесь семейными фото, связанными с космосом.</p>
+            <button disabled>Записаться</button>
+        </div>
+        <div class="conkyrs">
+            <img src="https://avatars.mds.yandex.net/i?id=1d5a343b5d4ab9e2471baed6ed1956626cc84c7b-4522563-images-thumbs&n=13.png">
+            <h3>Космические поделки</h3>
+            <p>Создайте поделку, связанную с вашей семьёй и космосом.</p>
+            <button disabled>Записаться</button>
+        </div>
+        <div class="conkyrs">
+            <img src="https://avatars.mds.yandex.net/i?id=46c5748374165bfec6466175e04a5652ee258e6e-5750239-images-thumbs&n=13.jpeg">
+            <h3>Рассказы о космических приключениях</h3>
+            <p>Поделитесь приключениями вашей семьи.</p>
+            <button disabled>Записаться</button>
+        </div>
+    </div>
+
+    <div class="poisk" aria-label="Поиск конкурсов" style="margin-bottom:30px;">
+        <input  placeholder="Поиск по названию или описанию...">
+        <button>Поиск</button>
+    </div>
+
+    <div class="reviews" aria-label="Отзывы">
+        <h2>Отзывы</h2>
+        <div class="review" tabindex="0">
+            <img src="https://avatars.mds.yandex.net/i?id=a9429828482f79f3ab6add3a4c2088728d2bcd1f-5243350-images-thumbs&n=13">
+            <div>
+                <p class="name" style="font-weight:bold; margin:0;">Иван Иванов</p>
+                <p style="margin:5px 0;">Очень понравились конкурсы! Отличная организация и настроение.</p>
+                <p class="date" style="font-size:12px; color:#888; margin:0;">12 апреля 2024</p>
+                <a href="competition.html" style="color:#80cbc4;">Подробнее</a>
+            </div>
+        </div>
+        <div class="review">
+            <img src="https://avatars.mds.yandex.net/i?id=533efa504d3a6b0500b04218bc55a2eaeecfa09c-10966719-images-thumbs&n=13">
+            <div>
+                <p class="name" style="font-weight:bold; margin:0;">Анна Смирнова</p>
+                <p style="margin:5px 0;">Отличные семейные конкурсы, очень рекомендую!</p>
+                <p class="date" style="font-size:12px; color:#888; margin:0;">8 марта 2024</p>
+                <a href="competition.html" style="color:#80cbc4;">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer id="kontakt">
+    <p>
+        <a href="" >+7 (952)006-55-64</a> |
+        <a href="" >familycosmos@gmail.com</a>
+    </p>
+    <p>
+        <a href="index.html">Главная</a>
+        <a href="index-light.html">Главная-светлая</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="competition.html">Конкурс</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="404.html" style="color:aqua;">Страница не найдена</a>
+    </p>
+</footer>
+
+</body>
+</html>
