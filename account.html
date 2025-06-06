@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Моя семья – мой космос | Личный кабинет</title>Add commentMore actions
+    <style>
+        body {
+            background-color: #000;
+            color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #282828;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            border-bottom: 1px solid gray;
+            overflow: hidden; 
+        }
+
+        header img {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 26px;
+            margin: 0 40px 0 0;
+        }
+
+        header a {
+            color: aqua;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 18px;
+            line-height: 100px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .lichnyy-kabinet {
+            background-color: #202020;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            width: 100%; 
+            max-width: 500px; 
+            height: auto; 
+        }
+
+        .lichnyy-kabinet h2 {
+            margin-top: 20px;
+        }
+
+        .lichnyy-kabinet div {
+            margin-bottom: 20px;
+        }
+
+        .lichnyy-kabinet input,
+        .lichnyy-kabinet select {
+            padding: 7px;
+            border-radius: 4px;
+            border: none;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .lichnyy-kabinet button {
+            background-color: #80cbc4;
+            border: none;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: not-allowed; 
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        .lichnyy-kabinet button.exit {
+            width: 150px;
+            margin-top: 10px;
+            background-color: #ff4d4d;
+        }
+
+        footer {
+            background-color: #282828;
+            color: aqua;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: aqua;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+
+            header h1 {
+                margin: 10px 0;
+            }
+
+            header a {
+                margin: 5px 0;
+            }
+
+            .mobl {
+                width: 90%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.yapx.ru/ZQZaa.png" alt="Логотип">
+    <h1>Моя семья - мой космос</h1>
+    <a href="index.html">Главная</a>
+    <a href="index-light.html">Главная-светлая</a>
+    <a href="registration.html">Регистрация</a>
+    <a href="competition.html">Конкурс</a>
+    <a href="account.html">Личный кабинет</a>
+    <a href="404.html">Страница не найдена</a>
+</header>
+
+<main>
+    <div class="lichnyy-kabinet">
+        <h2>Личный кабинет</h2>
+        <div>
+            <label>Выберите конкурс:</label>
+            <select id="konkurs" disabled>
+                <option value="" disabled selected>Выберите конкурс</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Дата:</label>
+            <input type="date" id="data" value="2024-07-08" disabled>
+        </div>
+
+        <div>
+            <label>Время:</label>
+            <input type="time" id="vremya" disabled>
+        </div>
+
+        <div>
+            <label>Количество участников:</label>
+            <input type="number" id="uchastniki" min="1" max="10" disabled>
+        </div>
+
+        <button type="button" disabled>Записаться на конкурс</button>
+        <button type="button" class="exit" disabled>Выйти из профиля</button>
+    </div>
+</main>
+
+<footer>
+  <p>
+    Контакты: <a href="tel:+79520065564">+7 (952) 006-55-64</a> | <a href="mailto:familycosmos@gmail.com">familycosmos@gmail.com</a>
+  </p>
+  <p>
+    <a href="index.html">Главная</a> |
+    <a href="registration.html">Регистрация</a> |
+    <a href="competition.html">Конкурс</a> |
+    <a href="account.html">Личный кабинет</a> |
+    <a href="404.html">Страница не найдена</a>
+  </p>
+</footer>
+
+</body>
+</html>
